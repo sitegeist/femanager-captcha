@@ -1,0 +1,20 @@
+{namespace freeCap=SJBR\SrFreecap\ViewHelpers}
+{namespace captcha=Sitegeist\FemanagerCaptcha\ViewHelpers}
+<f:comment>This partial is copied from EXT:femanager to change captcha</f:comment>
+<div class="femanager_fieldset femanager_captcha form-group">
+	<label for="femanager_field_captcha" class="col-sm-2 control-label">
+		<f:translate key="tx_femanager_domain_model_user.captcha" default="Captcha" />
+		<span>*</span>
+	</label>
+	<div class="col-sm-10">
+        <f:if condition="{settings.new.validation.captcha.use}">
+            <f:then>
+                <f:render partial="Fields/{settings.new.validation.captcha.use}" arguments="{_all}" />
+            </f:then>
+            <f:else>
+                <f:comment>Original FreeCap Code</f:comment>
+                <f:render partial="Fields/freecap" arguments="{_all}" />
+            </f:else>
+        </f:if>
+	</div>
+</div>

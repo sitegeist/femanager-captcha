@@ -1,0 +1,27 @@
+{namespace femanager=In2code\Femanager\ViewHelpers}
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:altcha="http://typo3.org/ns/BBysaeth/Typo3Altcha/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment>This is taken from EXT:altcha to display altcha</f:comment>
+
+<f:asset.script identifier="altcha" src="EXT:altcha/Resources/Public/JavaScript/dist/altcha.js" defer="true"
+                async="true" type="module" useNonce="true"/>
+<f:asset.css identifier="altcha-css" useNonce="true">
+    .is-invalid span.invalid-feedback {
+    display:block;
+    }
+</f:asset.css>
+
+<altcha:form.altcha property="{element.identifier}" id="captcha"
+                    class="{element.properties.elementClassAttribute} form-control">
+    <f:comment>For options see https://altcha.org/docs/v2/widget-integration/#widget-customization</f:comment>
+    <altcha-widget
+        challengejson="{challenge -> f:format.json()}"
+        name="tx_femanager_registration[captcha]"
+        strings=""
+    ></altcha-widget>
+</altcha:form.altcha>
+</html>
+
+
+

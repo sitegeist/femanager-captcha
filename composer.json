@@ -1,0 +1,25 @@
+{
+	"name": "sitegeist/femanager-captcha",
+	"type": "typo3-cms-extension",
+	"description": "Adds ability for multiple captchas to femanager, ships with altcha",
+	"license": "proprietary",
+	"version": "1.0",
+	"authors": [
+	],
+	"autoload": {
+		"psr-4": {
+			"Sitegeist\\FemanagerCaptcha\\": "Classes/"
+		}
+	},
+	"require": {
+		"typo3/cms-core": "^13.4",
+		"in2code/femanager": "^13.1.0",
+		"sjbr/sr-freecap": "*",
+		"bbysaeth/typo3-altcha": "*"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "femanager-captcha"
+		}
+	}
+}
