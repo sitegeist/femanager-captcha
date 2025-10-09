@@ -21,7 +21,7 @@ Looking for EXT:femanager to use a GDPR compliant captcha? This extension is shi
    # enable use of captcha in femanager
     plugin.tx_femanager.settings.new.validation.captcha.captcha = 1
     # provide the path to overwritten partials (do not change this line)
-    plugin.tx_femanager.view.partialRootPaths.1759843226 = EXT:femanager-captcha/Resources/Private/Partials/
+    plugin.tx_femanager.view.partialRootPaths.1759843226 = EXT:femanager_captcha/Resources/Private/Partials/
    # use altcha instead of sr_freecap
     plugin.tx_femanager.settings.new.validation.captcha.use = altcha
    # use the validator class for altcha
