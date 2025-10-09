@@ -3,7 +3,6 @@
 	"type": "typo3-cms-extension",
 	"description": "Adds ability for multiple captchas to femanager, ships with altcha",
 	"license": "proprietary",
-	"version": "1.0",
 	"authors": [
 	],
 	"autoload": {
