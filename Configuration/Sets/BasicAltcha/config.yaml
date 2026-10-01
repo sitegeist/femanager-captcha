@@ -1,2 +1,4 @@
 name: femanager-captcha/basic-altcha
 label: Femanager Captcha, basic + altcha settings
+dependencies:
+  - bbysaeth/typo3-altcha
