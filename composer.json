@@ -14,7 +14,7 @@
 		"typo3/cms-core": "^13.4",
 		"in2code/femanager": "^13.1.0",
 		"sjbr/sr-freecap": "*",
-		"bbysaeth/typo3-altcha": "*"
+		"bbysaeth/typo3-altcha": "^2.0"
 	},
 	"extra": {
 		"typo3/cms": {
