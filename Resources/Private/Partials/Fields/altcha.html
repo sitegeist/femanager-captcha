@@ -62,7 +62,7 @@
     <f:variable name="altchaStrings">{f:render(partial: 'AltchaTranslations')}</f:variable>
     <altcha-widget
         challenge="{altchaChallengeUrl}"
-        name="{name}"
+        name="tx_femanager_registration[captcha]"
         configuration="{f:format.json(value: {hideLogo: settings.hideAltchaLogo, hideFooter: settings.hideFooter, barPlacement: settings.barPlacement, verifyUrl: altchaVerifyUrl})}"
         <f:if condition="{settings.widgetType}">type="{settings.widgetType}"</f:if>
         <f:if condition="{settings.display}">display="{settings.display}"</f:if>
